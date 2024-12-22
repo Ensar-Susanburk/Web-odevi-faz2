@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>susanburk.com</title>
+    <link rel="stylesheet" href="Portfoy.css">
+</head>
+<body>
+    <div class="div1">
+        <h2 class="h1"><strong>Ensar Susanburk</strong></h2>
+        <div class="img">
+            <img src="photo.jpg" alt="Ensar Susanburk Fotoğraf">
+        </div>
+        <header>
+            <nav>
+                <a href="javascript:void(0);" onclick="toggleText('Hakkımda')">Hakkımda</a>
+                <a href="javascript:void(0);" onclick="toggleText('Projeler')">Projeler</a>
+                <a href="javascript:void(0);" onclick="toggleText('İletişim')">İletişim</a>
+                <a href="javascript:void(0);" onclick="toggleText('Yetenekler')">Yetenekler</a>
+            </nav>
+        </header>
+
+        <button class="mesajButonu" onclick="toggleText('mesajSayfası')">Mesaj Gönder</button>
+    </div>
+   
+    <div class="mesajSayfası" id="mesajSayfası">
+        <h2 class="mesajGonder">Mesaj Gönder</h2>
+        <form action="/submit" method="post" id="contactForm">
+            <input type="email" id="email" placeholder="e-mail giriniz" required><br><br>
+            <input type="text" id="konu" placeholder="konu giriniz" required><br><br>
+            <textarea id="mesaj" placeholder="Mesajınızı giriniz" required></textarea><br><br>
+
+            <button type="submit" id="gonderButonu">Gönder</button>
+        </form>
+    </div>
+
+    <div class="div2" id="Hakkımda">
+        <h2 class="h2" onclick="toggleText('Hakkımda')">Hakkımda</h2>
+        <p>Merhaba! Ben Ensar Susanburk, bilgisayar mühendisliği bölümünde okuyorum.</p>
+        <p>Gelişime açık bir şekilde yazılım geliştiriyorum</p>
+    </div>
+
+    <div class="div3" id="Projeler">
+        <h2 class="h2" onclick="toggleText('Projeler')">Projeler</h2>
+        <ul>
+            <li>Akıllı Tarım</li>
+            <li>Yapay zeka destekli olan mobil, hasta asistanı</li>
+            <li>Mobilden girilen bilgi ve verileri exele aktaran ve her defasında güncelleyen uygulama</li>
+        </ul>
+    </div>
+
+    <div class="div4" id="İletişim">
+        <h2 class="h2" onclick="toggleText('İletişim')">İletişim</h2>
+        <p>Bana ulaşmak için <a href="mailto:ensarsusan@gmail.com">ensarsusan@gmail.com</a></p>
+
+    </div>
+
+    <div class="div5" id="Yetenekler">
+        <h2 class="h2" onclick="toggleText('Yetenekler')">Yetenekler</h2>
+        <ul>
+            <li>JS</li>
+            <li>HTML/CSS</li>
+            <li>PHP</li>
+            <li>C++</li>
+            <li>Exel</li>
+           
+
+        </ul>
+    </div>
+
+    <div class="div6">
+        <p class="p2">© 2024 Susanburk Yazılım. Tüm Hakları Saklıdır.</p>
+    </div>
+
+    <script src="Portfoy.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
