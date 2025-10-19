@@ -63,7 +63,7 @@ app.post('/send-email', async (req, res) => { // kulanıcıdaki bilgiler alını
     }
 });
 
-
+// sunucu dinleme
 app.listen(PORT, () => {
     console.log(`Server çalışıyor: http://localhost:${PORT}`);
 });
